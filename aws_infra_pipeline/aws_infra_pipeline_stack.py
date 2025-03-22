@@ -17,7 +17,7 @@ class AwsInfraPipelineStack(Stack):
             bucket_name="zaralinkawspipelinestore",
             versioned=True,
             encryption=s3.BucketEncryption.S3_MANAGED,
-            block_public_access=s3.BlockPublicAccess.BLOCK_ALL
+            block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
             removal_policy=RemovalPolicy.DESTROY
         )        
                 
